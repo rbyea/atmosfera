@@ -2,24 +2,50 @@
 	h1
 		font-family: 'ANTQUABI', sans-serif
 		color: #197cc3
+		font-weight: 900
+		font-size: 40px
 	&-content
 		display: flex
 		justify-content: space-between
 		padding: 1em
 		&__navbar
-			font-family: 'RobotoRegular', serif
 			ul
 				display: flex
 				list-style: none
 				li
 					padding: 1em
 					a
-						text-decoration: none
 						color: #000000
+						font-size: 18px
+						text-decoration: none
+						transition: all .5s ease
+						&:hover
+							border-bottom: 1px solid #197cc3
+							color: #197cc3
+							transition: all .5s ease
 		&__feedback
-			font-family: 'RobotoRegular', serif
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			a
+				color: #000000
+				text-decoration: none
+				&:hover
+					border-bottom: 1px solid #197cc3
+					color: #197cc3
+					transition: all .5s ease
 			&_phone
 				margin-bottom: 5px
+				font-weight: bold
+				font-size: 18px
+				&-one
+					margin-bottom: 5px
+					position: relative
+				&-two
+					margin-bottom: 5px
+				&-three
+					margin-bottom: 5px
 			&_email
 				margin-bottom: 5px
 	

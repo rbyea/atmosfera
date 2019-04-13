@@ -5,3 +5,28 @@
 .container
 	width: 1170px
 	margin: auto
+
+html
+	font-family: 'RobotoRegular', sans-serif
+
+.button
+	background-color: #197cc3
+	height: 50px
+	border: none
+	width: 200px
+	border-radius: 5px
+	border-bottom: darken(#197cc3, 20%) 4px solid
+	color: #ffffff
+	cursor: pointer
+	transition: all .5s ease
+	&:hover 
+    background-color: lighten(#197cc3, 10%)
+	&:active 
+		background-color: darken(#197cc3, 21%)
+		transition: none
+	&:focus
+		outline: none
+
+.fa-mobile-alt
+	color: #197cc3
+	margin-right: 10px
