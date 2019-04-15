@@ -190,6 +190,13 @@
 	.header
 		h1
 			font-size: 30px
+
+	.modal
+		&-window
+			height: 527px
+		&-feedback
+			&__loc
+				flex-direction: column
 	
 @media only screen and (max-width : 575px)
 	.header
@@ -253,6 +260,17 @@
 			a
 				font-size: 15px
 
+	.modal
+		&-window
+			&__box
+				width: 300px
+				&_form
+					&-list
+						width: 260px
+
+	.scroll
+		right: 10px
+
 @media only screen and (max-width : 370px)
 	.main
 		&-content
@@ -290,6 +308,9 @@
 			img
 				width: 280px
 				height: 280px
+
+	.warning
+		right: 0
 
 	.prev
 		top: 285px

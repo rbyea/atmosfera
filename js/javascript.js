@@ -29,18 +29,6 @@
 })();
 
 $(document).ready(function () {
-	jQuery("a.colorbox").colorbox({
-	});
-});
-
-$("a.colorbox").colorbox({
-	rel: 'gal', title: function () {
-		var url = $(this).attr('href');
-	}
-});
-
-
-$(document).ready(function () {
 	$('#humburger').on('click', function () {
 		$('.header-content__navbar-mobile').toggleClass('header-menu_vis');
 	});
@@ -57,4 +45,44 @@ $(document).ready(function () {
 	$('.modal-window__close').on('click', function () {
 		$('.modal').toggleClass('modal-vis');
 	});
+});
+
+$(document).ready(function () {
+	$(".work-your img").lazyload({
+		effect: "fadeIn"
+	});
+	$("a[data-link='colorbox']").colorbox({
+		maxWidth: "90%",
+		maxHeight: "90%",
+		opacity: "0.7",
+		current: "Документ"
+	});
+});
+
+$("#back-top").hide();
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 100) {
+		$("#back-top").fadeIn();
+	} else {
+		$("#back-top").fadeOut();
+	}
+});
+
+
+$("#back-top a").click(function () {
+	$("html").animate({
+		scrollTop: 0
+	}, 1000);
+	return false;
+});
+
+
+	//всплывающее описание, через 1 минуту
+// $('.warning').fadeOut().delay(60000).fadeIn();
+
+$("body").on('click', '[href*="#"]', function (e) {
+	var fixed_offset = 100;
+	$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+	e.preventDefault();
 });
