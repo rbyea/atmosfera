@@ -1,6 +1,19 @@
 .reviews
 	padding-bottom: 50px
 	padding-top: 50px
+	&-container
+		display: flex
+		flex-direction: column
+		align-items: center
+	&-btn
+		position: relative
+		margin-top: 70px
+		&:before
+			content: url('../image/form/comment-regular.svg')
+			position: absolute
+			right: -60px
+			top: -50px
+			width: 50px
 	&-title
 		font-size: 50px
 		&:before
@@ -13,7 +26,12 @@
 		justify-content: center
 		flex-wrap: wrap
 		&__box
-			width: 33%
+			width: 320px
+			margin-left: 10px
+			margin-bottom: 20px
+			border: 1px solid #cccccc
+			padding: 20px
+			border-radius: 15px
 			display: flex
 			flex-direction: column
 			align-items: center
