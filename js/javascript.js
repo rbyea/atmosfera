@@ -48,3 +48,13 @@ $(document).ready(function () {
 		$('.header-content__navbar-mobile').toggleClass('header-menu_vis');
 	});
 });
+
+
+$(document).ready(function () {
+	$('.btn-open').on('click', function () {
+		$('.modal').toggleClass('modal-vis');
+	});
+	$('.modal-window__close').on('click', function () {
+		$('.modal').toggleClass('modal-vis');
+	});
+});
