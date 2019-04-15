@@ -901,6 +901,10 @@
           align-items: center;
 }
 
+.modal-feedback__loc_sity a {
+  margin-bottom: 5px;
+}
+
 .modal-phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,7 +1338,7 @@ html {
     font-size: 30px;
   }
   .modal-window {
-    height: 527px;
+    height: 575px;
   }
   .modal-feedback__loc {
     -webkit-box-orient: vertical;
