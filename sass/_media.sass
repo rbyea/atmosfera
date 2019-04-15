@@ -177,6 +177,15 @@
 						img
 							max-width: 100%
 
+
+@media only screen and (max-width : 628px)
+	.header
+		&-content
+			flex-direction: column
+			&__logo
+				&-mobile
+					position: absolute
+
 @media only screen and (max-width : 575px)
 	.header
 		h1
@@ -186,8 +195,6 @@
 	.header
 		h1
 			margin-bottom: 10px
-		&-content
-			flex-direction: column
 
 @media only screen and (max-width : 526px)
 	.main
