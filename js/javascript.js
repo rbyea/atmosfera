@@ -79,7 +79,7 @@ $("#back-top a").click(function () {
 
 
 	//всплывающее описание, через 1 минуту
-// $('.warning').fadeOut().delay(60000).fadeIn();
+$('.warning').fadeOut().delay(60000).fadeIn();
 
 $("body").on('click', '[href*="#"]', function (e) {
 	var fixed_offset = 100;
