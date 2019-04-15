@@ -38,3 +38,13 @@ $("a.colorbox").colorbox({
 		var url = $(this).attr('href');
 	}
 });
+
+
+$(document).ready(function () {
+	$('#humburger').on('click', function () {
+		$('.header-content__navbar-mobile').toggleClass('header-menu_vis');
+	});
+	$('.header-mobile__window-box').on('click', function () {
+		$('.header-content__navbar-mobile').toggleClass('header-menu_vis');
+	});
+});
