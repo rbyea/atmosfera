@@ -728,7 +728,7 @@
           align-items: center;
 }
 
-.footer-content a {
+.footer-content__feedback_phone a {
   color: #000000;
   font-size: 18px;
   text-decoration: none;
@@ -736,7 +736,7 @@
   transition: all .5s ease;
 }
 
-.footer-content a:hover {
+.footer-content__feedback_phone a:hover {
   border-bottom: 1px solid #197cc3;
   color: #197cc3;
   -webkit-transition: all .5s ease;
@@ -750,6 +750,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.site a {
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.site a:hover {
+  color: #197cc3;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .modal {
