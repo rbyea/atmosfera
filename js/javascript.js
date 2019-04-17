@@ -28,6 +28,7 @@
 	});
 })();
 
+
 $(document).ready(function () {
 	$('#humburger').on('click', function () {
 		$('.header-content__navbar-mobile').toggleClass('header-menu_vis');
@@ -44,18 +45,6 @@ $(document).ready(function () {
 	});
 	$('.modal-window__close').on('click', function () {
 		$('.modal').toggleClass('modal-vis');
-	});
-});
-
-$(document).ready(function () {
-	$(".work-your img").lazyload({
-		effect: "fadeIn"
-	});
-	$("a[data-link='colorbox']").colorbox({
-		maxWidth: "90%",
-		maxHeight: "90%",
-		opacity: "0.7",
-		current: "Документ"
 	});
 });
 
@@ -104,3 +93,18 @@ var wow = new WOW(
 	}
 );
 wow.init();
+
+
+$(document).ready(function () {
+	$('#btn-rev').on('click', function () {
+		$('.modal-2').toggleClass('modal-vis-2');
+	});
+	$('.modal-window__close-2').on('click', function () {
+		$('.modal-2').toggleClass('modal-vis-2');
+	});
+});
+
+$(document).ready(function(){
+	$("#phone-two").mask("+7 (999) 99-99-999");
+	$("#phone-three").mask("+7 (999) 99-99-999");
+});

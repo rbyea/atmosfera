@@ -315,6 +315,11 @@
   font-size: 19px;
 }
 
+.main-content__boxing-image i {
+  font-size: 50px;
+  color: #3faabf;
+}
+
 .work {
   padding-bottom: 100px;
 }
@@ -931,6 +936,39 @@
   margin-right: 12px;
 }
 
+.modal-2 {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+
+.modal-vis-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-window__close-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+textarea {
+  padding-top: 20px;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -970,21 +1008,6 @@ html {
 .fa-mobile-alt {
   color: #197cc3;
   margin-right: 10px;
-}
-
-.fa-users {
-  font-size: 50px;
-  color: #3faabf;
-}
-
-.fa-medal {
-  font-size: 50px;
-  color: #3faabf;
-}
-
-.fa-check {
-  font-size: 50px;
-  color: #3faabf;
 }
 
 .slick-slide img {
@@ -1116,6 +1139,23 @@ html {
 
 .warning-pop-close {
   cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1315px) {
